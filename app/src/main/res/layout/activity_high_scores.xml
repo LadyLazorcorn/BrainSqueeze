@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="@color/cardview_shadow_start_color"
+    android:backgroundTintMode="src_over"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/information_txt_view"
+        android:text="@string/information_about_high_scores_table"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="15"
+        android:textSize="15sp"
+        android:padding="20dp"/>
+
+    <TableLayout
+        android:id="@+id/highScoresTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/layout_border"
+        android:padding="5dp"
+        android:layout_margin="2dp">
+    </TableLayout>
+
+</LinearLayout>

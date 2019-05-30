@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">BrainSqueeze</string>
+
+    <string name="first_message">BrainSqueeze</string>
+
+    <string name="loginBtnTxt">Login</string>
+    <string name="switchUserBtnTxt">Switch user</string>
+    <string name="playBtnTxt">Play</string>
+    <string name="highScoresBtnTxt">High Scores</string>
+    <string name="suggestBtnTxt">Suggest a Question</string>
+    <string name="exitBtnTxt">Exit</string>
+
+    <string name="signin_failed">Failed signin</string>
+    <string name="logout">LOGOUT</string>
+    <string name="delete_user">DELETE USER</string>
+    <string name="sign_out_error">Failed to sign out</string>
+    <string name="user_deletion_error">Failed to delete user</string>
+    <string name="unknown_response">Known response</string>
+    <string name="user_name">User name</string>
+    <string name="user_profile">Welcome to your profile page</string>
+    <string name="profile_title">User Profile</string>
+
+    <string name="info_categories">Select five categories to continue.
+        You are not allowed to select the same category twice.</string>
+    <string name="category1View">Select First Category:</string>
+    <string name="category2View">Select Second Category:</string>
+    <string name="category3View">Select Third Category:</string>
+    <string name="category4View">Select Fourth Category:</string>
+    <string name="category5View">Select Fifth Category:</string>
+
+    <string name="nextBtn">Next</string>
+
+    <string name="scoreView">Score: 0</string>
+    <string name="livesView">Lives: 3</string>
+
+    <string name="InstructionsViewTxt">Please fill in the following fields and press send.</string>
+    <string name="QuestionFieldViewTxt">Question:</string>
+    <string name="Answer1FieldViewTxt">Enter the first answer:</string>
+    <string name="Answer2FieldViewTxt">Enter the second answer:</string>
+    <string name="Answer3FieldViewTxt">Enter the third answer:</string>
+    <string name="CorrectAnswerFieldViewTxt">Enter the correct answer below:</string>
+    <string name="SelectCategoryViewTxt">Finally, select the category that your question should be:</string>
+    <string name="sendBtn">Send</string>
+
+    <string-array name="allCategories">
+        <item>Java</item>
+        <item>HTML</item>
+        <item>C</item>
+        <item>Javascript</item>
+        <item>PHP</item>
+    </string-array>
+
+    <string name="nickname_dialog_message">Welcome to the community.</string>
+
+    <string name="submitScoreBtnTxt">Submit score online</string>
+    <string name="playagainBtnTxt">Play again</string>
+
+    <string name="mainMenuBtnTxt">Return to main menu</string>
+
+    <string name="information_about_high_scores_table">This is a live table that displays the top 10 user high scores.</string>
+
+    <string name="mustLoginFirst">You must login for this service.</string>
+</resources>

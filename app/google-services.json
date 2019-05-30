@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "653694352609",
+    "firebase_url": "https://quiz-questions-79773.firebaseio.com",
+    "project_id": "quiz-questions-79773",
+    "storage_bucket": "quiz-questions-79773.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653694352609:android:2c5570a9439a7b8d",
+        "android_client_info": {
+          "package_name": "com.example.user.simpleandroidquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653694352609-t0crmpovf8cps0mbvcnk6g2tj64sb21k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf3ltU7DxdTpCp1z1IOxjylag9iOxpPFU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

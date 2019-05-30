@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="@color/cardview_shadow_start_color"
+    android:backgroundTintMode="src_over">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/InstructionsView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/InstructionsViewTxt"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/QuestionFieldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/QuestionFieldViewTxt"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/QuestionField"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/background_light"
+            android:inputType="text"
+            android:textColor="?android:attr/textColorTertiary"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/Answer1FieldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/Answer1FieldViewTxt"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Answer1Field"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/background_light"
+            android:inputType="text"
+            android:textColor="?android:attr/textColorTertiary"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/Answer2FieldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/Answer2FieldViewTxt"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textStyle="bold"  />
+
+        <EditText
+            android:id="@+id/Answer2Field"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/background_light"
+            android:inputType="text"
+            android:textColor="?android:attr/textColorTertiary"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/Answer3FieldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/Answer3FieldViewTxt"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textStyle="bold"  />
+
+        <EditText
+            android:id="@+id/Answer3Field"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/background_light"
+            android:inputType="text"
+            android:textColor="?android:attr/textColorTertiary"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/CorrectAnswerFieldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/CorrectAnswerFieldViewTxt"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textStyle="bold"  />
+
+        <EditText
+            android:id="@+id/CorrectAnswerField"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/background_light"
+            android:inputType="text"
+            android:textColor="?android:attr/textColorTertiary"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/SelectCategoryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/SelectCategoryViewTxt"
+            android:textColor="@android:color/background_light"
+            android:shadowColor="@color/colorBlack"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="15"
+            android:textStyle="bold"  />
+
+        <Spinner
+            android:id="@+id/select_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="55dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_rounded_corners"
+            android:fontFamily="sans-serif"
+            android:onClick="sendPotentialQuestion"
+            android:text="@string/sendBtn"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/background_dark" />
+
+    </LinearLayout>
+
+</ScrollView>
+
