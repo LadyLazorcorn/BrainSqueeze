@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:backgroundTint="@color/cardview_shadow_start_color"
-    android:backgroundTintMode="src_over"
-    android:orientation="vertical"
-    android:weightSum="1">
+    android:backgroundTintMode="src_over">
 
     <TextView
         android:id="@+id/first_message_txtView"
@@ -15,149 +14,139 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/fontdiner_swanky"
         android:gravity="center"
-        android:paddingBottom="10dp"
         android:paddingTop="20dp"
+        android:paddingBottom="10dp"
         android:shadowColor="@color/colorBlack"
         android:shadowDx="5"
         android:shadowDy="5"
         android:shadowRadius="15"
         android:text="@string/first_message"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         android:textColor="@android:color/holo_red_light"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/welcome_txtView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
         android:fontFamily="@font/cabin_sketch"
         android:gravity="center"
         android:padding="10dp"
-        android:text=""
-        android:textColor="#fbf7f7"
         android:shadowColor="@color/colorBlack"
         android:shadowDx="5"
         android:shadowDy="5"
         android:shadowRadius="15"
+        android:textColor="#fbf7f7"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_message_txtView"
+        tools:text="Welcome User" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_rounded_corners"
+        android:text="@string/logout"
+        android:textColor="?android:attr/textColorTertiary"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/delete_user"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_txtView" />
+
+    <Button
+        android:id="@+id/delete_user"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_rounded_corners"
+        android:text="@string/delete_user"
+        android:textColor="?android:attr/textColorTertiary"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sign_out"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_txtView" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_classic"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/loginBtnTxt"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toStartOf="@+id/highScoresBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_out" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/sign_out"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_gravity="left"
-                android:layout_marginBottom="35dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/button_rounded_corners"
-                android:text="@string/logout"
-                android:textColor="?android:attr/textColorTertiary"
-                android:textSize="10sp"
-                android:visibility="invisible" />
-
-            <Button
-                android:id="@+id/loginBtn"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button_classic"
-                android:fontFamily="sans-serif"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/loginBtnTxt"
-                android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textColor="@android:color/background_dark" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/delete_user"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_gravity="right"
-                android:layout_marginBottom="35dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/button_rounded_corners"
-                android:text="@string/delete_user"
-                android:textColor="?android:attr/textColorTertiary"
-                android:textSize="10sp"
-                android:visibility="invisible" />
-
-            <Button
-                android:id="@+id/highScoresBtn"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/button_classic"
-                android:onClick="highScores"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:text="@string/highScoresBtnTxt"
-                android:textAppearance="@style/TextAppearance.AppCompat"
-                android:textColor="@android:color/background_dark" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/highScoresBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_classic"
+        android:onClick="highScores"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/highScoresBtnTxt"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/delete_user" />
 
     <Button
         android:id="@+id/playBtn"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_classic"
         android:fontFamily="@font/faster_one"
         android:onClick="play"
         android:text="@string/playBtnTxt"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/highScoresBtn"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/highScoresBtn" />
 
 
     <Button
         android:id="@+id/suggestBtn"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_classic"
         android:onClick="suggestQuestion"
         android:text="@string/suggestBtnTxt"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/playBtn"
+        app:layout_constraintStart_toStartOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn" />
 
     <Button
         android:id="@+id/exitBtn"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_classic"
         android:text="@string/exitBtnTxt"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="@+id/suggestBtn"
+        app:layout_constraintStart_toStartOf="@+id/suggestBtn"
+        app:layout_constraintTop_toBottomOf="@+id/suggestBtn" />
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
